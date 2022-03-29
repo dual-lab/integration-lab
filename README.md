@@ -3,13 +3,13 @@
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![MIT License][license-shield]][license-url]
-
+[![GitHub release][version-shield]][version-url]
 
 
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
-  <a href="https://github.com/dlab/integration-lab">
+  <a href="https://github.com/dual-lab/integration-lab">
     <img src="docs/images/laboratory.png" alt="Logo" width="80" height="80">
   </a>
   <h6>
@@ -109,7 +109,7 @@ TODO
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/dlab/integration-lab/issues) for a full list of proposed features (and known issues).
+See the [open issues](https://github.com/dual-lab/integration-lab/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -128,7 +128,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Dual-lab team - dual-lab@yandex.com
 
-Project Link: [https://github.com/dlab/integration-lab](https://github.com/dlab/integration-lab)
+Project Link: [https://github.com/dual-lab/integration-lab](https://github.com/dual-lab/integration-lab)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -149,10 +149,12 @@ Project Link: [https://github.com/dlab/integration-lab](https://github.com/dlab/
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[forks-shield]: https://img.shields.io/github/forks/dlab/integartion-lab.svg?style=for-the-badge
-[forks-url]: https://github.com/dlab/integartion-lab/network/members
-[stars-shield]: https://img.shields.io/github/stars/dlab/integartion-lab.svg?style=for-the-badge
-[stars-url]: https://github.com/dlab/integartion-lab/stargazers
-[license-shield]: https://img.shields.io/github/license/dlab/integartion-lab.svg?style=for-the-badge
-[license-url]: https://github.com/dlab/integration-lab/blob/master/LICENSE
+[forks-shield]: https://img.shields.io/github/forks/dual-lab/integration-lab.svg?style=for-the-badge
+[forks-url]: https://github.com/dual-lab/integration-lab/network/members
+[stars-shield]: https://img.shields.io/github/stars/dual-lab/integration-lab.svg?style=for-the-badge
+[stars-url]: https://github.com/dual-lab/integration-lab/stargazers
+[license-shield]: https://img.shields.io/github/license/dual-lab/integration-lab.svg?style=for-the-badge
+[license-url]: https://github.com/dual-lab/integration-lab/blob/master/LICENSE
 [product-screenshot]: images/screenshot.png
+[version-shield]: https://img.shields.io/github/v/release/dual-lab/integration-lab?include_prereleases&sort=semver&style=for-the-badge
+[version-url]: https://github.com/dual-lab/integration-lab/releases
