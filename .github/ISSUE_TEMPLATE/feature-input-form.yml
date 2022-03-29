@@ -10,28 +10,28 @@ body:
       value: |
         (\U0001F680) Great, i have an idea!
   - type: textarea
-    id: Solution
+    id: solution
     attributes:
       label: Your solution
       description: Please describe the desired behavior
       placeholder: Describe the solution you'd like!
-      value: "A bug happened!"
+      value: "We can do..!"
     validations:
       required: true
   - type: textarea
-    id: Solution
+    id: other-solution
     attributes:
-      label: Your solution
-      description: Please describe the desired behavior
-      placeholder: Describe the solution you'd like!
-      value: "A bug happened!"
+      label: Your alternative solution
+      description: Please describe the alternative behavior
+      placeholder: Describe the alternative solution you'd like!
+      value: "Or we can do..!"
     validations:
-      required: true
+      required: false
   - type: checkboxes
     id: source
     attributes:
       label: Source of feature
-      description: s your feature request related to a problem?
+      description: Is your feature request related to a problem?
       options:
         - label: Yes
           required: true
