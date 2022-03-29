@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        (⁉️) Please file an issue for help!
+        (⁉️) Please help ME!
   - type: textarea
     id: help
     attributes:

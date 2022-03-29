@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        (\U0001F680) Suggest an idea for this project!
+        (\U0001F680) Great, i have an idea!
   - type: textarea
     id: Solution
     attributes:
