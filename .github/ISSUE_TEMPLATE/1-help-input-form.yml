@@ -1,0 +1,20 @@
+name: Help Report
+description: File a help report
+title: "[HELP]: "
+labels: ["help wanted"]
+assignees:
+  - dmike16
+body:
+  - type: markdown
+    attributes:
+      value: |
+        (⁉️) Please file an issue for help!
+  - type: textarea
+    id: help
+    attributes:
+      label: Your question
+      description: Please describe the help wanted
+      placeholder: Need help!
+      value: "Help  me!"
+    validations:
+      required: true

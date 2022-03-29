@@ -1,0 +1,37 @@
+name: Feature Report
+description: File a feature report
+title: "[FEAT]: "
+labels: ["enhancement"]
+assignees:
+  - dmike16
+body:
+  - type: markdown
+    attributes:
+      value: |
+        (\U0001F680) Suggest an idea for this project!
+  - type: textarea
+    id: Solution
+    attributes:
+      label: Your solution
+      description: Please describe the desired behavior
+      placeholder: Describe the solution you'd like!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: textarea
+    id: Solution
+    attributes:
+      label: Your solution
+      description: Please describe the desired behavior
+      placeholder: Describe the solution you'd like!
+      value: "A bug happened!"
+    validations:
+      required: true
+  - type: checkboxes
+    id: source
+    attributes:
+      label: Source of feature
+      description: s your feature request related to a problem?
+      options:
+        - label: Yes
+          required: true
