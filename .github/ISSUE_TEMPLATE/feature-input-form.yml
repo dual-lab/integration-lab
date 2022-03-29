@@ -33,5 +33,5 @@ body:
       label: Source of feature
       description: Is your feature request related to a problem?
       options:
-        - label: Yes
+        - label: "Yes"
           required: true
