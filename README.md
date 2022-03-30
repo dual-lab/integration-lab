@@ -60,9 +60,11 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+<!-- [![Product Name Screen Shot][product-screenshot]](https://example.com) -->
 
-TODO
+Integration-lab is a collection of example of EIP patterns implemented with
+apache camel. The microservices are implemented with different technologies like
+quarkus, go, fastApi etc...
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -74,6 +76,7 @@ TODO
 * [Quarkus](https://quarkus.io/)
 * [FastAPI](https://fastapi.tiangolo.com/)
 * [Gin](https://gin-gonic.com/)
+* [Buildah](https://buildah.io/)
 
 
 <p align="right">(<a href="#top">back to top</a>)</p>
@@ -87,7 +90,7 @@ TODO
 
 ### Prerequisites
 
-TODO
+Install  [bazel](https://bazel.build) on your system to build all the projects.
 
 ### Installation
 
