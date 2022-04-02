@@ -1,4 +1,4 @@
-workspace(name='com_github_dlab_microservices')
+workspace(name='com_github_dlab_integration_lab')
 
 load("@bazel_tools//tools/build_defs/repo:http.bzl", "http_archive")
 load("//:def.bzl", "GO_VERSION", "GO_RULE_HASH", "GO_RULE_VERSION", "GAZELLE_RULE_HASH"
