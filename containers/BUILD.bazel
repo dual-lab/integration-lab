@@ -1,14 +1,31 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_binary", "go_library")
 load("@bazel_gazelle//:def.bzl", "gazelle")
+load("//:def.bzl", "REPO_VERSION")
 
-# gazelle:prefix github.com.dlab/integration/lab/containers
+# gazelle:prefix github.com/dual-lab/integration-lab/containers
 gazelle(name = "gazelle")
 
 gazelle(
     name = "gazelle-update-repos",
     args = [
-        "-from_file=go.mod",
-        "-to_macro=deps.bzl%go_dependencies",
+        "-from_file=containers/go.mod",
+        "-to_macro=containers/deps.bzl%go_dependencies",
         "-prune",
     ],
     command = "update-repos",
+)
+
+go_library(
+    name = "containers_lib",
+    srcs = ["cli.go"],
+    importpath = "github.com/dual-lab/integration-lab/containers",
+    visibility = ["//visibility:private"],
+    deps = ["@com_github_urfave_cli_v2//:cli"],
+)
+
+go_binary(
+    name = "containers",
+    embed = [":containers_lib"],
+    visibility = ["//visibility:public"],
+    x_defs = {"version": REPO_VERSION},
 )
