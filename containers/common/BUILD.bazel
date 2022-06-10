@@ -1,0 +1,18 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "common",
+    srcs = [
+        "build.go",
+        "builderfile.go",
+        "package.go",
+    ],
+    importpath = "github.com/dual-lab/integration-lab/containers/common",
+    visibility = ["//visibility:public"],
+    deps = [
+        "@com_github_containers_buildah//:buildah",
+        "@com_github_containers_image_v5//storage",
+        "@com_github_containers_storage//:storage",
+        "@com_github_containers_storage//pkg/unshare",
+    ],
+)

@@ -1,0 +1,11 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "images",
+    srcs = [
+        "hellowrold.go",
+        "package.go",
+    ],
+    importpath = "github.com/dual-lab/integration-lab/containers/images",
+    visibility = ["//visibility:public"],
+)
