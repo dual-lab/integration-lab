@@ -5,7 +5,14 @@ go_library(
     srcs = [
         "hellowrold.go",
         "package.go",
+        "shared.go",
     ],
     importpath = "github.com/dual-lab/integration-lab/containers/images",
     visibility = ["//visibility:public"],
+    deps = [
+        "//containers/common",
+        "@com_github_containers_buildah//:buildah",
+        "@com_github_containers_storage//:storage",
+        "@com_github_containers_storage//pkg/unshare",
+    ],
 )

@@ -16,6 +16,6 @@ type BuilderFile interface {
 	// Compose function used to run all the instruction tha compose the whole
 	// images, like all the instructions in a dockerfile
 	Compose(b *buildah.Builder) (err error)
-  // Image name
-  Name()(name string)
+	// Image name
+	Name() (name string)
 }
