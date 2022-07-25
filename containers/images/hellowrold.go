@@ -15,7 +15,7 @@ func NewHelloworldBuilder() common.BuilderFile {
 
 func (builder *helloworldBuilder) NewBuildOpts() (opts buildah.BuilderOptions, err error) {
   return buildah.BuilderOptions{
-    FromImage: "helloworld",
+    FromImage: "hello-world:linux",
   }, nil
 }
 
@@ -24,5 +24,5 @@ func (builder *helloworldBuilder) Compose(b *buildah.Builder) (err error) {
 }
 
 func (builder *helloworldBuilder) Name() (name string) {
-	return "hello-world-integration"
+  return "hello-world:integration"
 }

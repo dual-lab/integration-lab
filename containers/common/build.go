@@ -4,26 +4,22 @@ import (
 	"context"
 
 	"github.com/containers/buildah"
-	"github.com/containers/storage/pkg/unshare"
-  is "github.com/containers/image/v5/storage"
+	is "github.com/containers/image/v5/storage"
+	"github.com/sirupsen/logrus"
 )
 
 // Main function that build the images using
 // buildah go API
 func BuildMain(builderFile BuilderFile) (err error) {
-	if buildah.InitReexec() {
-		return
-	}
-	unshare.MaybeReexecUsingUserNamespace(false)
-
+  
 	buildStore, err := builderFile.NewStorage()
-	if err != nil {
+  if err != nil {
 		return
 	}
 	defer buildStore.Shutdown(false)
 
 	buildOptions, err := builderFile.NewBuildOpts()
-	if err != nil {
+  if err != nil {
 		return
 	}
   builder, err := buildah.NewBuilder(context.TODO(), buildStore, buildOptions)
@@ -39,7 +35,12 @@ func BuildMain(builderFile BuilderFile) (err error) {
   if err != nil {
     return
   }
-  _, _, _, err = builder.Commit(context.TODO(), imageRef, buildah.CommitOptions{})
+  logWriter := logrus.StandardLogger().Writer()
+  _, _, _, err = builder.Commit(context.TODO(), imageRef, buildah.CommitOptions{
+    ReportWriter: logWriter,
+  })
+
+  defer logWriter.Close()
   if err != nil {
     return
   }

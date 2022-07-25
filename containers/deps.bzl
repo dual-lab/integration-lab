@@ -443,6 +443,9 @@ def go_dependencies():
     )
     go_repository(
         name = "com_github_containers_buildah",
+        build_directives = [
+            "gazelle:resolve go github.com/docker/libnetwork/resolvconf @com_github_docker_libnetwork//resolvconf:go_default_library",
+        ],
         importpath = "github.com/containers/buildah",
         sum = "h1:D65Vuo+orsI14WWtJhSX6KrpgBBa7+hveVWevzG8p8E=",
         version = "v1.26.1",

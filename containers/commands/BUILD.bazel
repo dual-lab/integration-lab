@@ -1,0 +1,16 @@
+load("@io_bazel_rules_go//go:def.bzl", "go_library")
+
+go_library(
+    name = "commands",
+    srcs = [
+        "box.go",
+        "package.go",
+    ],
+    importpath = "github.com/dual-lab/integration-lab/containers/commands",
+    visibility = ["//visibility:public"],
+    deps = [
+        "//containers/common",
+        "//containers/images",
+        "@com_github_urfave_cli_v2//:cli",
+    ],
+)
